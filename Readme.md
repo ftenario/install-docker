@@ -1,10 +1,10 @@
-# Install Docker in Debian Linux
+# Install Docker-CE (Community Edition) in Debian Linux
 
 Login as root or sudo
 ```
   # apt-get update
 
-  # apt-get Install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+  # apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 
   # curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo apt-key add -
 
@@ -16,7 +16,7 @@ Login as root or sudo
 
   # apt-get install docker-ce
 
-  # curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+  # sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
   # chmod +x /usr/local/bin/docker-compose
 
